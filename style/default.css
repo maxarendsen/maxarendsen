@@ -25,9 +25,7 @@ body{
 
 li{
     display: inline-block;
-    zoom:1;
-    display:inline;
-    padding-right: 8px;
+    padding-right: 10px;
 }
 ul{
     padding: 0 0 0 5;  
@@ -35,8 +33,8 @@ ul{
 }
 
 .vs-code-logo{
-    width:20px;
-    height: 20px;
+    width:18px;
+    height: 18px;
 }
 
 .vs-code-footer{
@@ -47,6 +45,11 @@ ul{
     color:white;
     background: #007ACC;
     padding-left: 15px;
+    font-size: 15px;
+}
+
+.vs-code-footer svg{
+    height:14px;
 }
 
 .windows{
@@ -55,4 +58,60 @@ ul{
 }
 .windows img{
     height: 25px;
+}
+
+.vs-code-editors{
+    width:100%;
+    color: #969696;
+    background: #252526;
+}
+
+.vs-code-editors li{
+    background: #2D2D2D;
+    padding:7px 15px 7px 15px;
+}
+.vs-code-editors li.active{
+    background:#1E1E1E;
+    color:white;
+}
+
+.vs-code-editors li svg{
+    display: none;
+}
+
+.vs-code-editors li.active svg{
+    width: 18px;
+    display: inline;
+}
+
+.vs-code-editors li img{
+    height:15px;
+    width:15px;
+}
+
+.vs-code-breadcrumb{
+    padding:5px 10px 5px 10px;
+    font-size: 14px;
+    color: #969696;
+}
+.vs-code-breadcrumb img{
+    height:14px;
+    width:14px;
+}
+
+.vs-code-body pre {
+    counter-increment: line;
+}
+.vs-code-body pre:before {
+    content: counter(line);
+    display: inline-block;
+    padding: 0 12px;
+    margin-right: 14px;
+    color: #888
+}
+.vs-code-body pre{
+    color:white !important;
+    font-family: monospace !important;
+    font-size: 16px;
+    margin:0;
 }
